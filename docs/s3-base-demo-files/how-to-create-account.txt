@@ -1,0 +1,5 @@
+## Create Account
+- To create an account visit the URL example.org/register
+- Your username must only contain lowercase letters
+- Your password must contain at least 1 letter, 1 number, 1 special character
+- Allow up to 24 hours for your account to be approved

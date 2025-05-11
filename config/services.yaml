@@ -22,3 +22,11 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Service\AwsBedrock:
+        arguments:
+            $awsRegion: '%env(AWS_REGION)%'
+            $awsAccessKeyID: '%env(AWS_ACCESS_KEY_ID)%'
+            $awsSecretAccessKey: '%env(AWS_SECRET_ACCESS_KEY)%'
+            $bedrockAgentId: '%env(BEDROCK_AGENT_ID)%'
+            $bedrockAgentAliasId: '%env(BEDROCK_AGENT_ALIAS_ID)%'
